@@ -111,7 +111,7 @@ void walkSequence() {
   setServo(10,65);
   setServo(11,85);
 
-  setServo(4,90);
+  setServo(4,120);
   setServo(5,90);
 
   setServo(7,90);
@@ -121,7 +121,7 @@ void walkSequence() {
   delay(500);
 
   setServo(4,65);
-  setServo(5,70);
+  setServo(5,90);
 
   setServo(7,115);
   setServo(8,110);
