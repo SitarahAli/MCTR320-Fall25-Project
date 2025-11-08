@@ -71,12 +71,36 @@ void calibrateServos() {
   Serial.println("Starting calibration sequence...\n");
   Serial.println("Moving ALL servos to 90 degrees simultaneously...\n");
 
-  // Move all servos to 90° at the same time
-  for (int i = 0; i < 12; i++) {
-    setServo(i, 90);
-  }
+  delay(1000);
+
+  setServo(0,90);
+  setServo(3, 90);
+  setServo(6,85); //shoulder 3 needs to be at 85 degrees
+  setServo(9, 93);
 
   delay(1000);
+
+  setServo(2,80);
+  setServo(5, 100);
+  setServo(8,80);
+  setServo(11, 100);
+
+  delay(1000);
+
+  setServo(2,90);
+  setServo(5, 90);
+  setServo(8,90);
+  setServo(11, 90);
+
+  delay(1000);
+
+  setServo(1,90);
+  setServo(4, 90);
+  setServo(7,90);
+  setServo(10, 90);
+
+  //1 and 3 (180 - values) are opposite of 2 and 4 (at values)
+
 
   Serial.println("All servos are now at 90 degrees.");
   Serial.println("\nServo positions:");
